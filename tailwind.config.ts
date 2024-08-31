@@ -1,23 +1,23 @@
 import type { Config } from 'tailwindcss';
+import linkBox from './tailwind/plugins/linkbox';
 
 const config: Config = {
-  content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
-  ],
-  theme: {
-    extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
-    },
-  },
-  plugins: [],
-  future: {
-    hoverOnlyWhenSupported: true,
-  },
+	content: [
+		'./src/pages/**/*.{js,ts,jsx,tsx,mdx}',
+		'./src/components/**/*.{js,ts,jsx,tsx,mdx}',
+		'./src/app/**/*.{js,ts,jsx,tsx,mdx}',
+	],
+	theme: {
+		extend: {
+			fontFamily: {
+				sans: 'var(--font-sans)',
+				serif: 'var(--font-serif)',
+			},
+		},
+	},
+	plugins: [linkBox],
+	future: {
+		hoverOnlyWhenSupported: true,
+	},
 };
 export default config;
