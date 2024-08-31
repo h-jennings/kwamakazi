@@ -7,7 +7,7 @@ module.exports = {
 		'plugin:@typescript-eslint/stylistic-type-checked',
 		'prettier',
 	],
-	ignores: ['tailwind/*'],
+	ignorePatterns: ['tailwind/*'],
 	rules: {
 		'@typescript-eslint/strict-boolean-expressions': 'warn',
 		'no-constant-binary-expression': 'warn',
