@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	font-family: var(--font-sans);
+}
+
+*:focus:not(:focus-visible) {
+	@apply !outline-none;
+}
