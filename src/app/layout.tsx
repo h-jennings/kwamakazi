@@ -17,7 +17,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 				<div className="bg-ds-bg-foundation h-full min-h-[100dvh]">
 					<DesktopNavbar />
 					<MobileNavigation />
-					<div className="h-full min-h-[calc(100dvh-var(--site-nav-height))]">{children}</div>
+					<div className="h-full min-h-[calc(100dvh-var(--site-nav-height))] grid">{children}</div>
 				</div>
 			</div>
 		</RootHtml>
